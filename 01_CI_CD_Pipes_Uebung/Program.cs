@@ -13,6 +13,8 @@
             int sum = zahl1 + zahl2;
 
             Console.WriteLine("Das Ergbnis ist: " + sum);
+
+            Console.WriteLine("Test");
         }
     }
 }
