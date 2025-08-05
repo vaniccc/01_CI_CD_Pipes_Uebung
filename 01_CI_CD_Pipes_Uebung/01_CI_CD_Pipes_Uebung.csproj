@@ -8,7 +8,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>_01_CI_CD_Pipes_Uebung</RootNamespace>
     <AssemblyName>01_CI_CD_Pipes_Uebung</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkVersion>net8.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
