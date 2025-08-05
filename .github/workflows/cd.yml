@@ -1,23 +1,20 @@
 name: Deploy
-
+ 
 on:
   workflow_run:
-    workflows: ["Build and Deploy"]
+    workflows: ["Build and Test"]
     types:
       - completed
-
+ 
 jobs:
-  deploy:
+  build-and-run:
     runs-on: self-hosted
-
+ 
     steps:
-      - name: Stop existing application (if running)
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+ 
+      - name: Upload to deploy directory
         run: |
-          echo "Beende laufende Anwendung (falls vorhanden)..."
-          pkill -f csharp-app/01_CI_CD_Pipes_Uebung || true
-
-      - name: Start application in background
-        run: |
-          echo "Starte Anwendung neu..."
-          nohup /home/azubi/deploy/csharp-app/01_CI_CD_Pipes_Uebung > /home/azubi/deploy/csharp-app/log.txt 2>&1 &
-          echo "Anwendung läuft jetzt im Hintergrund."
+          mkdir -p /home/azubi/deploy/csharp-app/
+          cp -r output/* /home/azubi/deploy/csharp-app/

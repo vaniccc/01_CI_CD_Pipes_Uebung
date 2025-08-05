@@ -13,7 +13,7 @@
             int sum = zahl1 + zahl2;
 
             Thread.Sleep(500);
-            Console.WriteLine("Aufnahme beider Zahlen... \n" );
+            Console.WriteLine("Aufnahme beider Zahlen... \n");
 
             Thread.Sleep(1000);
             Console.WriteLine("Berechnung beider Zahlen... \n");
@@ -21,6 +21,8 @@
             Thread.Sleep(3000);
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("Das Ergbnis ist: " + sum + "\n");
+            
+            Console.WriteLine("Änderung erfolgreich!");
         }
     }
 }
