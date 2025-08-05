@@ -19,6 +19,7 @@
             Console.WriteLine("Berechnung beider Zahlen... \n");
 
             Thread.Sleep(3000);
+            Console.BackgroundColor = ConsoleColor.Yellow;
             Console.WriteLine("Das Ergbnis ist: " + sum + "\n");
         }
     }
