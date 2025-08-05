@@ -12,15 +12,10 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Setup .NET
-        uses: actions/setup-dotnet@v3
-        with:
-          dotnet-version: '8.0.x'
-
       - name: Restore and Publish Project
         run: |
           dotnet restore 01_CI_CD_Pipes_Uebung/01_CI_CD_Pipes_Uebung.csproj
-          dotnet publish 01_CI_CD_Pipes_Uebung/01_CI_CD_Pipes_Uebung.csproj -c Release --no-restore -o ./output
+          dotnet publish 01_CI_CD_Pipes_Uebung/01_CI_CD_Pipes_Uebung.csproj -c Release -o /home/azubi/deploy/csharp-app/
 
       - name: upload to deploy directory
         run: |

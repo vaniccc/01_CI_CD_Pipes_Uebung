@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace _01_CI_CD_Pipes_Uebung
+﻿namespace _01_CI_CD_Pipes_Uebung
 {
     internal class Program
     {
@@ -18,4 +16,3 @@ namespace _01_CI_CD_Pipes_Uebung
         }
     }
 }
-
