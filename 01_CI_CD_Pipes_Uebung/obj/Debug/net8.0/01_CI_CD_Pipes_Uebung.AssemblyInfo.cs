@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("01_CI_CD_Pipes_Uebung")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a2f39d4ff2e15b84d58b97dea10d226baff1831b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6c2cd1b8c2b632da0d3410291f802f5061a63b9b")]
 [assembly: System.Reflection.AssemblyProductAttribute("01_CI_CD_Pipes_Uebung")]
 [assembly: System.Reflection.AssemblyTitleAttribute("01_CI_CD_Pipes_Uebung")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

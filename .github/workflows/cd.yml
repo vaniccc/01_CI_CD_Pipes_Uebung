@@ -1,0 +1,23 @@
+name: Deploy
+
+on:
+  workflow_run:
+    workflows: ["Build and Deploy"]
+    types:
+      - completed
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+
+    steps:
+      - name: Stop existing application (if running)
+        run: |
+          echo "Beende laufende Anwendung (falls vorhanden)..."
+          pkill -f csharp-app/01_CI_CD_Pipes_Uebung || true
+
+      - name: Start application in background
+        run: |
+          echo "Starte Anwendung neu..."
+          nohup /home/azubi/deploy/csharp-app/01_CI_CD_Pipes_Uebung > /home/azubi/deploy/csharp-app/log.txt 2>&1 &
+          echo "Anwendung läuft jetzt im Hintergrund."
