@@ -1,26 +1,23 @@
 name: Deploy
- 
+
 on:
   workflow_run:
     workflows: ["Build"]
     types:
       - completed
- 
-jobs:
-  build-and-run:
-    runs-on: self-hosted
- 
-    steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
 
+jobs:
+  deploy:
+    runs-on: self-hosted
+
+    steps:
       - name: Download Artifact
         uses: actions/download-artifact@v4
         with:
           name: csharp-app
           path: ./output
- 
+
       - name: Upload to deploy directory
         run: |
           mkdir -p /home/azubi/deploy/csharp-app/
-          cp -r output/* /home/azubi/deploy/csharp-app/
+          cp -r ./output/* /home/azubi/deploy/csharp-app/
