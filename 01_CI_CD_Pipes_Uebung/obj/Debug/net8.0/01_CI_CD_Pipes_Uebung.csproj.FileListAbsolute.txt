@@ -1,0 +1,15 @@
+C:\Users\dmezker\Desktop\01_CI_CD_Pipes_Uebung\01_CI_CD_Pipes_Uebung\bin\Debug\net8.0\01_CI_CD_Pipes_Uebung.exe
+C:\Users\dmezker\Desktop\01_CI_CD_Pipes_Uebung\01_CI_CD_Pipes_Uebung\bin\Debug\net8.0\01_CI_CD_Pipes_Uebung.deps.json
+C:\Users\dmezker\Desktop\01_CI_CD_Pipes_Uebung\01_CI_CD_Pipes_Uebung\bin\Debug\net8.0\01_CI_CD_Pipes_Uebung.runtimeconfig.json
+C:\Users\dmezker\Desktop\01_CI_CD_Pipes_Uebung\01_CI_CD_Pipes_Uebung\bin\Debug\net8.0\01_CI_CD_Pipes_Uebung.dll
+C:\Users\dmezker\Desktop\01_CI_CD_Pipes_Uebung\01_CI_CD_Pipes_Uebung\bin\Debug\net8.0\01_CI_CD_Pipes_Uebung.pdb
+C:\Users\dmezker\Desktop\01_CI_CD_Pipes_Uebung\01_CI_CD_Pipes_Uebung\obj\Debug\net8.0\01_CI_CD_Pipes_Uebung.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dmezker\Desktop\01_CI_CD_Pipes_Uebung\01_CI_CD_Pipes_Uebung\obj\Debug\net8.0\01_CI_CD_Pipes_Uebung.AssemblyInfoInputs.cache
+C:\Users\dmezker\Desktop\01_CI_CD_Pipes_Uebung\01_CI_CD_Pipes_Uebung\obj\Debug\net8.0\01_CI_CD_Pipes_Uebung.AssemblyInfo.cs
+C:\Users\dmezker\Desktop\01_CI_CD_Pipes_Uebung\01_CI_CD_Pipes_Uebung\obj\Debug\net8.0\01_CI_CD_Pipes_Uebung.csproj.CoreCompileInputs.cache
+C:\Users\dmezker\Desktop\01_CI_CD_Pipes_Uebung\01_CI_CD_Pipes_Uebung\obj\Debug\net8.0\01_CI_CD_Pipes_Uebung.sourcelink.json
+C:\Users\dmezker\Desktop\01_CI_CD_Pipes_Uebung\01_CI_CD_Pipes_Uebung\obj\Debug\net8.0\01_CI_CD_Pipes_Uebung.dll
+C:\Users\dmezker\Desktop\01_CI_CD_Pipes_Uebung\01_CI_CD_Pipes_Uebung\obj\Debug\net8.0\refint\01_CI_CD_Pipes_Uebung.dll
+C:\Users\dmezker\Desktop\01_CI_CD_Pipes_Uebung\01_CI_CD_Pipes_Uebung\obj\Debug\net8.0\01_CI_CD_Pipes_Uebung.pdb
+C:\Users\dmezker\Desktop\01_CI_CD_Pipes_Uebung\01_CI_CD_Pipes_Uebung\obj\Debug\net8.0\01_CI_CD_Pipes_Uebung.genruntimeconfig.cache
+C:\Users\dmezker\Desktop\01_CI_CD_Pipes_Uebung\01_CI_CD_Pipes_Uebung\obj\Debug\net8.0\ref\01_CI_CD_Pipes_Uebung.dll

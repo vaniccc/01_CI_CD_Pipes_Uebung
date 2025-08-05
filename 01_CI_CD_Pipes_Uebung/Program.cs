@@ -12,9 +12,14 @@
 
             int sum = zahl1 + zahl2;
 
-            Console.WriteLine("Das Ergbnis ist: " + sum);
+            Thread.Sleep(500);
+            Console.WriteLine("Aufnahme beider Zahlen... \n" );
 
-            Console.WriteLine("Test");
+            Thread.Sleep(2000);
+            Console.WriteLine("Berechnung beider Zahlen... \n");
+
+            Thread.Sleep(5000);
+            Console.WriteLine("Das Ergbnis ist: " + sum);
         }
     }
 }
