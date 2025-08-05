@@ -14,6 +14,7 @@ jobs:
 
       - name: Restore and Publish Project
         run: |
+          echo $PATH
           dotnet restore 01_CI_CD_Pipes_Uebung/01_CI_CD_Pipes_Uebung.csproj
           dotnet publish 01_CI_CD_Pipes_Uebung/01_CI_CD_Pipes_Uebung.csproj -c Release --no-restore -o ./output
           ls -l ./output/
