@@ -21,8 +21,6 @@
             Thread.Sleep(3000);
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("Das Ergbnis ist: " + sum + "\n");
-            
-            Console.WriteLine("Änderung erfolgreich!");
         }
     }
 }
