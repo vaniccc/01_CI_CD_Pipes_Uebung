@@ -1,0 +1,28 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build-and-deploy:
+    runs-on: self-hosted
+ 
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Restore and Publish Project
+        run: |
+          dotnet restore 01_CI_CD_Pipes_Uebung/01_CI_CD_Pipes_Uebung.csproj
+          dotnet publish 01_CI_CD_Pipes_Uebung/01_CI_CD_Pipes_Uebung.csproj -c Release -o output
+
+      - name: Copy to deploy directory
+        run: |
+          mkdir -p /home/azubi/deploy/csharp-app/
+          cp -r output/* /home/azubi/deploy/csharp-app/
