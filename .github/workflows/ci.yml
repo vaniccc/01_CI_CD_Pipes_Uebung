@@ -16,3 +16,9 @@ jobs:
         run: |
           /home/azubi/.dotnet/dotnet restore 01_CI_CD_Pipes_Uebung/01_CI_CD_Pipes_Uebung.csproj
           /home/azubi/.dotnet/dotnet publish 01_CI_CD_Pipes_Uebung/01_CI_CD_Pipes_Uebung.csproj -c Release --no-restore -o ./output
+      
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: csharp-app
+          path: ./output
