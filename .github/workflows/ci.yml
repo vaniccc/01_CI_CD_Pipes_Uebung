@@ -15,7 +15,8 @@ jobs:
       - name: Restore and Publish Project
         run: |
           dotnet restore 01_CI_CD_Pipes_Uebung/01_CI_CD_Pipes_Uebung.csproj
-          dotnet publish 01_CI_CD_Pipes_Uebung/01_CI_CD_Pipes_Uebung.csproj -c Release -o /home/azubi/deploy/csharp-app/
+          dotnet publish 01_CI_CD_Pipes_Uebung/01_CI_CD_Pipes_Uebung.csproj -c Release --no-restore -o ./output
+          ls -l ./output/
 
       - name: upload to deploy directory
         run: |
