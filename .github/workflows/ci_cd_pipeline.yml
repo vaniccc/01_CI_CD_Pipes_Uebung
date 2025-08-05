@@ -12,9 +12,16 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Restore and Publish Project
+      - name: Restore and Build Project
         run: |
           /home/azubi/.dotnet/dotnet restore 01_CI_CD_Pipes_Uebung/01_CI_CD_Pipes_Uebung.csproj
+          /home/azubi/.dotnet/dotnet restore _01_CI_CD_Pipes_Uebung.Tests/_01_CI_CD_Pipes_Uebung.Tests.csproj
+          
+          /home/azubi/.dotnet/dotnet build 01_CI_CD_Pipes_Uebung/01_CI_CD_Pipes_Uebung.csproj -c Release
+          /home/azubi/.dotnet/dotnet build _01_CI_CD_Pipes_Uebung.Tests/_01_CI_CD_Pipes_Uebung.Tests.csproj -c Release
+
+      - name: publish Project
+        run:
           /home/azubi/.dotnet/dotnet publish 01_CI_CD_Pipes_Uebung/01_CI_CD_Pipes_Uebung.csproj -c Release --no-restore -o ./output
 
       - name: Upload Artifact
