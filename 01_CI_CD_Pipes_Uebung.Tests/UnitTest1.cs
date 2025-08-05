@@ -7,7 +7,7 @@ public class Tests
     public class RechnerTests
     {
         [Test]
-        public void Addiere_Sollte_Zahlen_Addieren()
+        public void Ad_Zahlen_Addieren()
         {
             int testNumber1 = 4;
             int testNumber2 = 5;
