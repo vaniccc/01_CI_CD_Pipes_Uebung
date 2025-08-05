@@ -19,7 +19,7 @@
             Console.WriteLine("Berechnung beider Zahlen... \n");
 
             Thread.Sleep(3000);
-            Console.WriteLine("Das Ergbnis ist: " + sum);
+            Console.WriteLine("Das Ergbnis ist: " + sum + "\n");
         }
     }
 }

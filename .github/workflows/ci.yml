@@ -14,7 +14,7 @@ jobs:
 
       - name: Restore and Publish Project
         run: |
-          echo $PATH
+
           /home/azubi/.dotnet/dotnet restore 01_CI_CD_Pipes_Uebung/01_CI_CD_Pipes_Uebung.csproj
           /home/azubi/.dotnet/dotnet publish 01_CI_CD_Pipes_Uebung/01_CI_CD_Pipes_Uebung.csproj -c Release --no-restore -o ./output
           ls -l ./output/
@@ -22,4 +22,4 @@ jobs:
       - name: upload to deploy directory
         run: |
           mkdir -p /home/azubi/deploy/csharp-app/
-          cp -r output/* /home/azubi/deploy/csharp-app/
+          cp -r ./output/* /home/azubi/deploy/csharp-app/
