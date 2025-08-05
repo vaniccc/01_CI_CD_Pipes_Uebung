@@ -15,10 +15,10 @@
             Thread.Sleep(500);
             Console.WriteLine("Aufnahme beider Zahlen... \n" );
 
-            Thread.Sleep(2000);
+            Thread.Sleep(1000);
             Console.WriteLine("Berechnung beider Zahlen... \n");
 
-            Thread.Sleep(5000);
+            Thread.Sleep(3000);
             Console.WriteLine("Das Ergbnis ist: " + sum);
         }
     }
