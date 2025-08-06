@@ -27,7 +27,7 @@ namespace _01_CI_CD_Pipes_Uebung.Tests
         {
             try
             {
-                Assert.AreEqual(3, Rechner.Add(4, 5));
+                Assert.AreEqual(8, Rechner.Add(4, 5));
                 Log.Information("Test_Add erfolgreich");
             }
             catch (Exception ex)
@@ -43,7 +43,7 @@ namespace _01_CI_CD_Pipes_Uebung.Tests
         {
             try
             {
-                Assert.AreEqual(2, Rechner.Subtract(5, 3));
+                Assert.AreEqual(1, Rechner.Subtract(5, 3));
                 Log.Information("Test_Subtract erfolgreich.");
             }
             catch (Exception ex)
