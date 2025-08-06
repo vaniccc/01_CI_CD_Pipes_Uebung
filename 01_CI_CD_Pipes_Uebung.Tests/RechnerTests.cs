@@ -27,13 +27,13 @@ namespace _01_CI_CD_Pipes_Uebung.Tests
         {
             try
             {
-                Assert.AreEqual(8, Rechner.Add(4, 5));
+                Assert.AreEqual(9, Rechner.Add(4, 5));
                 Log.Information("Test_Add erfolgreich");
             }
             catch (Exception ex)
             {
                 Log.Error(ex, "Fehler in Test_Add");
-                throw ex;
+                throw;
             }
             
         }
@@ -43,13 +43,13 @@ namespace _01_CI_CD_Pipes_Uebung.Tests
         {
             try
             {
-                Assert.AreEqual(1, Rechner.Subtract(5, 3));
+                Assert.AreEqual(2, Rechner.Subtract(5, 3));
                 Log.Information("Test_Subtract erfolgreich.");
             }
             catch (Exception ex)
             {
                 Log.Error(ex, "Fehler in Test_Subtract");
-                throw ex;
+                throw;
             }
         }
 
@@ -64,7 +64,7 @@ namespace _01_CI_CD_Pipes_Uebung.Tests
             catch (Exception ex)
             {
                 Log.Error(ex, "Fehler in Test_Multiply");
-                throw ex;
+                throw;
             }
         }
 
@@ -79,7 +79,7 @@ namespace _01_CI_CD_Pipes_Uebung.Tests
             catch (Exception ex)
             {
                 Log.Error(ex, "Fehler in Test_Divide");
-                throw ex;
+                throw;
             }
         }
 
