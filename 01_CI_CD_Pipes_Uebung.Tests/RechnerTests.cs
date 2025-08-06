@@ -11,10 +11,13 @@ namespace _01_CI_CD_Pipes_Uebung.Tests
     {
 
         [OneTimeSetUp]
-        public void SetupLogger() { 
+        public void SetupLogger() {
+
+            string logDirectory = "/home/azubi/deploy/logs";
+
             Log.Logger = new LoggerConfiguration()
-                        .WriteTo.File(new JsonFormatter(), "logs/logs.json")
-                        .WriteTo.File("logs/all.logs", restrictedToMinimumLevel: LogEventLevel.Warning, rollingInterval: RollingInterval.Day)
+                        .WriteTo.File(new JsonFormatter(), Path.Combine(logDirectory, "logs.json"))
+                        .WriteTo.File(Path.Combine(logDirectory, "all-.logs"), restrictedToMinimumLevel: LogEventLevel.Warning, rollingInterval: RollingInterval.Day)
                         .MinimumLevel.Debug()
                         .CreateLogger();
         }
