@@ -31,19 +31,19 @@
                 switch (selectedCalculation)
                 {
                     case 1:
-                        result = Rechner.Addiere(enteredNumber1, enteredNumber2);
+                        result = Rechner.Add(enteredNumber1, enteredNumber2);
                         Console.WriteLine($"Das Ergebnis deiner Addition ({enteredNumber1} + {enteredNumber2}) ist: {result}");
                         break;
                     case 2:
-                        result = Rechner.Subtrahiere(enteredNumber1, enteredNumber2);
+                        result = Rechner.Subtract(enteredNumber1, enteredNumber2);
                         Console.WriteLine($"Das Ergebnis deiner Subtraktion ({enteredNumber1} - {enteredNumber2}) ist: {result}");
                         break;
                     case 3:
-                        result = Rechner.Multipliziere(enteredNumber1, enteredNumber2);
+                        result = Rechner.Multiply(enteredNumber1, enteredNumber2);
                         Console.WriteLine($"Das Ergebnis deiner Multiplikation ({enteredNumber1} * {enteredNumber2}) ist: {result}");
                         break;
                     case 4:
-                        result = Rechner.Dividiere(enteredNumber1, enteredNumber2);
+                        result = Rechner.Divide(enteredNumber1, enteredNumber2);
                         Console.WriteLine($"Das Ergebnis deiner Division ({enteredNumber1} / {enteredNumber2}) ist: {result}");
                         break;
                     default:

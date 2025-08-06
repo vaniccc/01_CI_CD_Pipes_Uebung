@@ -1,21 +1,22 @@
 using NUnit.Framework;
 using _01_CI_CD_Pipes_Uebung;
 using Serilog;
+using Serilog.Events;
 using System;
+using Serilog.Formatting.Json;
 
 namespace _01_CI_CD_Pipes_Uebung.Tests
 {
     public class RechnerTests
     {
-        private static ILogger _logger;
 
         [OneTimeSetUp]
-        public void OneTimeSetup()
-        {
-            _logger = new LoggerConfiguration()
-                .MinimumLevel.Debug()
-                .WriteTo.File("Test_Logs.txt", rollingInterval: RollingInterval.Day)
-                .CreateLogger();
+        public void SetupLogger() { 
+            Log.Logger = new LoggerConfiguration()
+                        .WriteTo.File(new JsonFormatter(), "logs/logs.json")
+                        .WriteTo.File("logs/all.logs", restrictedToMinimumLevel: LogEventLevel.Warning, rollingInterval: RollingInterval.Day)
+                        .MinimumLevel.Debug()
+                        .CreateLogger();
         }
 
         [Test]
@@ -23,14 +24,15 @@ namespace _01_CI_CD_Pipes_Uebung.Tests
         {
             try
             {
-                Assert.AreEqual(9, Rechner.Addiere(4, 5));
-                _logger.Information("Test_Add erfolgreich.");
+                Assert.AreEqual(8, Rechner.Add(4, 5));
+                Log.Information("Test_Add erfolgreich");
             }
             catch (Exception ex)
             {
-                _logger.Error(ex, "Fehler in Test_Add");
+                Log.Error(ex, "Fehler in Test_Add");
                 throw;
             }
+            
         }
 
         [Test]
@@ -38,12 +40,12 @@ namespace _01_CI_CD_Pipes_Uebung.Tests
         {
             try
             {
-                Assert.AreEqual(2, Rechner.Subtrahiere(5, 3));
-                _logger.Information("Test_Subtract erfolgreich.");
+                Assert.AreEqual(2, Rechner.Subtract(5, 3));
+                Log.Information("Test_Subtract erfolgreich.");
             }
             catch (Exception ex)
             {
-                _logger.Error(ex, "Fehler in Test_Subtract");
+                Log.Error(ex, "Fehler in Test_Subtract");
                 throw;
             }
         }
@@ -53,12 +55,12 @@ namespace _01_CI_CD_Pipes_Uebung.Tests
         {
             try
             {
-                Assert.AreEqual(15, Rechner.Multipliziere(3, 5));
-                _logger.Information("Test_Multiply erfolgreich.");
+                Assert.AreEqual(15, Rechner.Multiply(3, 5));
+                Log.Information("Test_Multiply erfolgreich.");
             }
             catch (Exception ex)
             {
-                _logger.Error(ex, "Fehler in Test_Multiply");
+                Log.Error(ex, "Fehler in Test_Multiply");
                 throw;
             }
         }
@@ -68,12 +70,12 @@ namespace _01_CI_CD_Pipes_Uebung.Tests
         {
             try
             {
-                Assert.AreEqual(2, Rechner.Dividiere(10, 5));
-                _logger.Information("Test_Divide erfolgreich.");
+                Assert.AreEqual(2, Rechner.Divide(10, 5));
+                Log.Information("Test_Divide erfolgreich.");
             }
             catch (Exception ex)
             {
-                _logger.Error(ex, "Fehler in Test_Divide");
+                Log.Error(ex, "Fehler in Test_Divide");
                 throw;
             }
         }
@@ -81,7 +83,16 @@ namespace _01_CI_CD_Pipes_Uebung.Tests
         [Test]
         public void Test_DevideByZeroExceptionThrow()
         {
-            Assert.Throws<DivideByZeroException>(() => Rechner.Dividiere(10, 0));
+            try
+            {
+                Assert.Throws<DivideByZeroException>(() => Rechner.Divide(10, 0));
+                Log.Information("Test_DivideByZeroExceptionThrow erfolgreich.");
+            }
+            catch (Exception ex)
+            {
+                Log.Error(ex, "Fehler in Test_DivideByZeroExceptionThrow");
+                throw;
+            }
         }
     }
 }
