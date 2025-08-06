@@ -27,7 +27,7 @@ namespace _01_CI_CD_Pipes_Uebung.Tests
         {
             try
             {
-                Assert.AreEqual(9, Rechner.Add(4, 5));
+                Assert.That(Rechner.Add(4, 5), Is.EqualTo(9));
                 Log.Information("Test_Add erfolgreich");
             }
             catch (Exception ex)
@@ -43,7 +43,7 @@ namespace _01_CI_CD_Pipes_Uebung.Tests
         {
             try
             {
-                Assert.AreEqual(2, Rechner.Subtract(5, 3));
+                Assert.That(Rechner.Subtract(5, 3), Is.EqualTo(2));
                 Log.Information("Test_Subtract erfolgreich.");
             }
             catch (Exception ex)
@@ -58,7 +58,7 @@ namespace _01_CI_CD_Pipes_Uebung.Tests
         {
             try
             {
-                Assert.AreEqual(15, Rechner.Multiply(3, 5));
+                Assert.That(Rechner.Multiply(3, 5), Is.EqualTo(15));
                 Log.Information("Test_Multiply erfolgreich.");
             }
             catch (Exception ex)
@@ -73,7 +73,7 @@ namespace _01_CI_CD_Pipes_Uebung.Tests
         {
             try
             {
-                Assert.AreEqual(2, Rechner.Divide(10, 5));
+                Assert.That(Rechner.Divide(10, 5), Is.EqualTo(2));
                 Log.Information("Test_Divide erfolgreich.");
             }
             catch (Exception ex)
