@@ -24,7 +24,7 @@ namespace _01_CI_CD_Pipes_Uebung.Tests
         {
             try
             {
-                Assert.AreEqual(8, Rechner.Add(4, 5));
+                Assert.AreEqual(9, Rechner.Add(4, 5));
                 Log.Information("Test_Add erfolgreich");
             }
             catch (Exception ex)
