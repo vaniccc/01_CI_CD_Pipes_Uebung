@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("01_CI_CD_Pipes_Uebung.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fda9105dfa9b84a4e20b990dc3bf4a16e4b6dfe3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+90f2c63e2fb7514fa2a5fd19072fed0f1e0b2b2a")]
 [assembly: System.Reflection.AssemblyProductAttribute("01_CI_CD_Pipes_Uebung.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("01_CI_CD_Pipes_Uebung.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

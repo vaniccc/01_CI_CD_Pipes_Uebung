@@ -33,7 +33,7 @@ namespace _01_CI_CD_Pipes_Uebung.Tests
             catch (Exception ex)
             {
                 Log.Error(ex, "Fehler in Test_Add");
-                throw;
+                throw ex;
             }
             
         }
@@ -49,7 +49,7 @@ namespace _01_CI_CD_Pipes_Uebung.Tests
             catch (Exception ex)
             {
                 Log.Error(ex, "Fehler in Test_Subtract");
-                throw;
+                throw ex;
             }
         }
 
@@ -64,7 +64,7 @@ namespace _01_CI_CD_Pipes_Uebung.Tests
             catch (Exception ex)
             {
                 Log.Error(ex, "Fehler in Test_Multiply");
-                throw;
+                throw ex;
             }
         }
 
@@ -79,7 +79,7 @@ namespace _01_CI_CD_Pipes_Uebung.Tests
             catch (Exception ex)
             {
                 Log.Error(ex, "Fehler in Test_Divide");
-                throw;
+                throw ex;
             }
         }
 
