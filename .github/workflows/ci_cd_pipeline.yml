@@ -15,10 +15,10 @@ jobs:
       - name: Restore and Build Projects
         run: |
           /home/azubi/.dotnet/dotnet restore 01_CI_CD_Pipes_Uebung/01_CI_CD_Pipes_Uebung.csproj
-          /home/azubi/.dotnet/dotnet restore _01_CI_CD_Pipes_Uebung.Tests/_01_CI_CD_Pipes_Uebung.Tests.csproj
+          /home/azubi/.dotnet/dotnet restore 01_CI_CD_Pipes_Uebung.Tests/01_CI_CD_Pipes_Uebung.Tests.csproj
 
-          /home/azubi/.dotnet/dotnet build _01_CI_CD_Pipes_Uebung/_01_CI_CD_Pipes_Uebung.csproj -c Release
-          /home/azubi/.dotnet/dotnet build _01_CI_CD_Pipes_Uebung.Tests/_01_CI_CD_Pipes_Uebung.Tests.csproj -c Release
+          /home/azubi/.dotnet/dotnet build 01_CI_CD_Pipes_Uebung/01_CI_CD_Pipes_Uebung.csproj -c Release
+          /home/azubi/.dotnet/dotnet build 01_CI_CD_Pipes_Uebung.Tests/01_CI_CD_Pipes_Uebung.Tests.csproj -c Release
 
       - name: Publish Project
         run:
