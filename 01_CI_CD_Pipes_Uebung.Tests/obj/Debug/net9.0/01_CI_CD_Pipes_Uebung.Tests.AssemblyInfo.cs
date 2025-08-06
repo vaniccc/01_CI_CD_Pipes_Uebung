@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("01_CI_CD_Pipes_Uebung")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("01_CI_CD_Pipes_Uebung.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7ef86befca0e66c26a0940cebeec198eb957da37")]
-[assembly: System.Reflection.AssemblyProductAttribute("01_CI_CD_Pipes_Uebung")]
-[assembly: System.Reflection.AssemblyTitleAttribute("01_CI_CD_Pipes_Uebung")]
+[assembly: System.Reflection.AssemblyProductAttribute("01_CI_CD_Pipes_Uebung.Tests")]
+[assembly: System.Reflection.AssemblyTitleAttribute("01_CI_CD_Pipes_Uebung.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Von der MSBuild WriteCodeFragment-Klasse generiert.
