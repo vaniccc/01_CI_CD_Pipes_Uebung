@@ -8,7 +8,7 @@ namespace _01_CI_CD_Pipes_Uebung.Tests
         [Test]
         public void Test_Add()
         {
-            Assert.AreEqual(9, Rechner.Addiere(4, 5));
+            Assert.AreEqual(8, Rechner.Addiere(4, 5));
         }
 
         [Test]
