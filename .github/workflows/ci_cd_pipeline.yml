@@ -27,7 +27,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: test-logs
-          path: 01_CI_CD_Pipes_Uebung.Tests/Logs/
+          path: 01_CI_CD_Pipes_Uebung.Tests/logs/
 
       - name: Publish Project
         run:
