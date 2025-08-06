@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\dmezker\\Desktop\\01_CI_CD_Pipes_Uebung\\01_CI_CD_Pipes_Uebung\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E6173240-6C09-484A-9DA3-78367FE51DD8}|01_CI_CD_Pipes_Uebung.csproj|c:\\users\\dmezker\\desktop\\01_ci_cd_pipes_uebung\\01_ci_cd_pipes_uebung\\rechner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6173240-6C09-484A-9DA3-78367FE51DD8}|01_CI_CD_Pipes_Uebung.csproj|solutionrelative:rechner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E6173240-6C09-484A-9DA3-78367FE51DD8}|01_CI_CD_Pipes_Uebung.csproj|c:\\users\\dmezker\\desktop\\01_ci_cd_pipes_uebung\\01_ci_cd_pipes_uebung\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E6173240-6C09-484A-9DA3-78367FE51DD8}|01_CI_CD_Pipes_Uebung.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6173240-6C09-484A-9DA3-78367FE51DD8}|01_CI_CD_Pipes_Uebung.csproj|c:\\users\\dmezker\\desktop\\01_ci_cd_pipes_uebung\\01_ci_cd_pipes_uebung\\rechner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6173240-6C09-484A-9DA3-78367FE51DD8}|01_CI_CD_Pipes_Uebung.csproj|solutionrelative:rechner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,30 +18,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Rechner.cs",
               "DocumentMoniker": "C:\\Users\\dmezker\\Desktop\\01_CI_CD_Pipes_Uebung\\01_CI_CD_Pipes_Uebung\\Rechner.cs",
               "RelativeDocumentMoniker": "Rechner.cs",
               "ToolTip": "C:\\Users\\dmezker\\Desktop\\01_CI_CD_Pipes_Uebung\\01_CI_CD_Pipes_Uebung\\Rechner.cs",
               "RelativeToolTip": "Rechner.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-06T06:10:19.236Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\dmezker\\Desktop\\01_CI_CD_Pipes_Uebung\\01_CI_CD_Pipes_Uebung\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\dmezker\\Desktop\\01_CI_CD_Pipes_Uebung\\01_CI_CD_Pipes_Uebung\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAgwBoAAAA5AAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAAAAQwDwAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-05T10:13:43.219Z",
               "EditorCaption": ""

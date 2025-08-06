@@ -1,4 +1,4 @@
-﻿using NUnit.Framework;
+using NUnit.Framework;
 using _01_CI_CD_Pipes_Uebung;
 
 namespace _01_CI_CD_Pipes_Uebung.Tests;

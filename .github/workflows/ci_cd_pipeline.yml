@@ -12,13 +12,14 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Restore and Build Projects
+      - name: Restore Projects
         run: |
           /home/azubi/.dotnet/dotnet restore 01_CI_CD_Pipes_Uebung/01_CI_CD_Pipes_Uebung.csproj
           /home/azubi/.dotnet/dotnet restore 01_CI_CD_Pipes_Uebung.Tests/01_CI_CD_Pipes_Uebung.Tests.csproj
 
-          /home/azubi/.dotnet/dotnet build 01_CI_CD_Pipes_Uebung/01_CI_CD_Pipes_Uebung.csproj -c Release
-          /home/azubi/.dotnet/dotnet build 01_CI_CD_Pipes_Uebung.Tests/01_CI_CD_Pipes_Uebung.Tests.csproj -c Release
+      - name: Run Unit Tests
+        run: |
+          /home/azubi/.dotnet/dotnet test 01_CI_CD_Pipes_Uebung.Tests/01_CI_CD_Pipes_Uebung.Tests.csproj --no-restore --verbosity normal
 
       - name: Publish Project
         run:
