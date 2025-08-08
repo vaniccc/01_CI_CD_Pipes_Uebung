@@ -5,6 +5,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dmezker\\Desktop\\01_CI_CD_Pipes_Uebung\\01_CI_CD_Pipes_Uebung.Tests\\RechnerTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:RechnerTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dmezker\\Desktop\\01_CI_CD_Pipes_Uebung\\01_CI_CD_Pipes_Uebung.Tests\\01_CI_CD_Pipes_Uebung.Tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:01_CI_CD_Pipes_Uebung.Tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +18,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "01_CI_CD_Pipes_Uebung.Tests.csproj",
+              "DocumentMoniker": "C:\\Users\\dmezker\\Desktop\\01_CI_CD_Pipes_Uebung\\01_CI_CD_Pipes_Uebung.Tests\\01_CI_CD_Pipes_Uebung.Tests.csproj",
+              "RelativeDocumentMoniker": "01_CI_CD_Pipes_Uebung.Tests.csproj",
+              "ToolTip": "C:\\Users\\dmezker\\Desktop\\01_CI_CD_Pipes_Uebung\\01_CI_CD_Pipes_Uebung.Tests\\01_CI_CD_Pipes_Uebung.Tests.csproj",
+              "RelativeToolTip": "01_CI_CD_Pipes_Uebung.Tests.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-06T09:25:03.132Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -24,7 +41,7 @@
               "RelativeDocumentMoniker": "RechnerTests.cs",
               "ToolTip": "C:\\Users\\dmezker\\Desktop\\01_CI_CD_Pipes_Uebung\\01_CI_CD_Pipes_Uebung.Tests\\RechnerTests.cs",
               "RelativeToolTip": "RechnerTests.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-06T09:00:22.651Z",
               "EditorCaption": ""
